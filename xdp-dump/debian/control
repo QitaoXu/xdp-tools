@@ -1,0 +1,12 @@
+Source: xdp-project/xdp-tools/xdp-dump
+Section: admin
+Priority: optional
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Build-Depends: debhelper (>= 11), gcc
+Standards-Version: 1.0.0
+Homepage: https://github.com/QitaoXu/xdp-tools/tree/master/xdp-dump
+
+Package: xdpdump
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: xdpdump is a simple XDP packet capture tool that tries to behave similar to tcpdump, however, it has no packet filter or decode capabilities.
